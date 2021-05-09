@@ -123,8 +123,12 @@ a {
   display: block;
   margin: 20px auto;
   width: 70%;
-  border-radius: 0%;
-  
+  justify-self: flex-start; 
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
 }
 
 .projects {
@@ -280,9 +284,7 @@ p .intro {
   }
 
   .bottom-name {
-      margin-top: 50px;
-      margin-left: 50px;
-      font-size: 40px;   
+    margin-left: 50px;   
   }
 
   .flex {
@@ -345,6 +347,8 @@ p .intro {
     display: flex;
   }
 
+  
+
  .main-header,  
  .to-top {
     flex-direction: row;
@@ -403,7 +407,7 @@ p .intro {
     background-color: #fff;
   }
 
-   .profile-image {
+  .profile-image {
     margin-right: 20px
   }
 
@@ -420,7 +424,7 @@ p .intro {
   .name {
     margin-top: 50px;
     margin-left: 50px;
-    font-size: 40px;
+   
   }
  
 }
