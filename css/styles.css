@@ -120,11 +120,9 @@ a {
 }
 
 .profile-image {
- 
   display: block;
   margin: 20px auto;
   width: 70%;
-  max-width: 500px;
   border-radius: 0%;
   
 }
