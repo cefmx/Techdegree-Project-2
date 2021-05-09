@@ -18,12 +18,13 @@ body {
   line-height: 1.5;
 }
 
-h1 .name {
+.name {
   color: #000;
   background-color: #fafafa;
   margin: 10px 0px 20px;
   letter-spacing: 1px;
   font-size: 2em;
+  text-align: center;
 }
 
 h2 {
@@ -83,6 +84,10 @@ a {
    flex-direction: column;
 }
 
+.main-nav li:nth-child(1) {
+  display: none;
+}
+
 .bottom-nav li {
   border: 2px solid #fafafa;
   padding: 15px 30px 15px 30px;
@@ -99,18 +104,29 @@ a {
   flex-direction: row;
 }
 
+.bottom-nav li:nth-child(2),
+.bottom-nav li:nth-child(3),
+.bottom-nav li:nth-child(4),
+.bottom-nav li:nth-child(5) {
+  display: none;
+}
+
 .intro {
   font-size: 20px;
   background-color: #fafafa;
   color: black;
   margin: 30px;
+  text-align: center;
 }
 
 .profile-image {
+ 
+  display: block;
   margin: 20px auto;
   width: 70%;
   max-width: 500px;
   border-radius: 0%;
+  
 }
 
 .projects {
@@ -138,20 +154,21 @@ a {
 
 #skills {
   padding: 1rem;
-  background-color: #fff;
+  background-color: #ffffff;
   margin-bottom: 50px;
 }
 
 .skills-list {
   display: inline-block;
   background: #fff;
-  color: rgb(0, 0, 0);
+  color: #000;
   margin: 0 auto;
   padding: 1rem;
   list-style: none;
   display: flex;
   flex-direction: column; 
   justify-content: space-around;
+  letter-spacing: 1.3px;
 }
 
 .skills-list li {
@@ -229,6 +246,25 @@ p .intro {
     padding: 5px 40px 10px;
   }
 
+  .main-nav li:nth-child(1) {
+    display: none;
+  }
+
+  .bottom-nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .bottom-nav li:nth-child(1){
+    display: none;
+  }
+
+  .bottom-nav li:nth-child(2),
+  .bottom-nav li:nth-child(3),
+  .bottom-nav li:nth-child(4),
+  .bottom-nav li:nth-child(5) {
+    display: inline-block;
+  }
 
   .to-top {
     flex-direction: row;
@@ -281,6 +317,10 @@ p .intro {
     margin-right: 20px
   }
 
+  .intro { 
+    text-align: left;
+  }
+
   #skills {
     background-color: #fff
   }
@@ -291,6 +331,8 @@ p .intro {
     justify-content: space-between;
     width: 50%;
   }
+
+
 
 }
 
@@ -311,10 +353,26 @@ p .intro {
     justify-content: space-between;
   }
 
+  .main-nav li:nth-child(1) {
+    display: none;
+  }
+
   .bottom-nav {
     flex-direction: row;
     justify-content: space-between;
   }
+
+  .bottom-nav li:nth-child(1){
+    display: none;
+  }
+
+  .bottom-nav li:nth-child(2),
+  .bottom-nav li:nth-child(3),
+  .bottom-nav li:nth-child(4),
+  .bottom-nav li:nth-child(5) {
+    display: inline-block;
+  }
+
 
   .flex {
     flex: 30%;
@@ -357,7 +415,11 @@ p .intro {
     margin: 0 auto;
   }
 
-   .name {
+  .intro { 
+    text-align: left;
+  }
+
+  .name {
     margin-top: 50px;
     margin-left: 50px;
     font-size: 40px;
